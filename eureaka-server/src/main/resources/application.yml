@@ -1,0 +1,12 @@
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+  server:
+# Configuration tells when the eureka server is started, you cannot wait for the instance registration information from the peer node.
+    waitTimeInMsWhenSyncEmpty: 0 #
+server:
+  port: 8761
+spring:
+  application:
+    name: Eureka-Server
